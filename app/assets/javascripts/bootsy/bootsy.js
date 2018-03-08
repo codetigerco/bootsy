@@ -190,7 +190,7 @@ Bootsy.Area.prototype.insertImage = function(image) {
 
 // Open Bootsy modal
 Bootsy.Area.prototype.openImagesModal = function(editor) {
-  editor.currentView.element.focus(false);
+  //editor.currentView.element.focus(false);
 
   this.caretBookmark = editor.composer.selection.getBookmark();
 
