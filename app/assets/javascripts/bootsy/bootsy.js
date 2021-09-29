@@ -241,8 +241,13 @@ Bootsy.Area.prototype.init = function() {
 
         imageObject = {
           src: img.attr('src').replace('/thumb_', imagePrefix),
-          alt: img.attr('alt').replace('Thumb_', '')
         };
+
+        altAttribute = img.attr('alt');
+
+        if(altAttribute !== undefined) {
+          imageObject.alt =  img.attr('alt').replace('Thumb_', '');
+        }
 
         imageObject.align = $(this).data('position');
 
