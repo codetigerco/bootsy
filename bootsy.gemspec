@@ -24,11 +24,11 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<mini_magick>.freeze, ["~> 4.0"])
-      s.add_runtime_dependency(%q<carrierwave>.freeze, ["~> 2.2.3"])
+      s.add_runtime_dependency(%q<carrierwave>.freeze, ["~> 3.0.0.beta"])
       s.add_runtime_dependency(%q<remotipart>.freeze, ["~> 1.2"])
     else
       s.add_dependency(%q<mini_magick>.freeze, ["~> 4.0"])
-      s.add_dependency(%q<carrierwave>.freeze, ["~> 2.2.3"])
+      s.add_dependency(%q<carrierwave>.freeze, ["~> 3.0.0.beta"])
       s.add_dependency(%q<remotipart>.freeze, ["~> 1.2"])
     end
   else
